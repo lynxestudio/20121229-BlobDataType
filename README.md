@@ -1,3 +1,6 @@
+# Trabajando con tipos binarios BLOB (Binary Large Object ) en PostgreSQL.
+
+
 <p align="justify">
 En el estándar SQL  están definidos dos tipos de datos para guardar grandes cantidades de información, el CLOB (CHARACTER LARGE OBJECT) que se utiliza para información de tipo texto  y el BLOB (BINARY LARGE OBJECT).
 </p>
