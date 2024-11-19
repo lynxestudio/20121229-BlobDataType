@@ -11,9 +11,6 @@ El tipo de datos CLOB se representa en la base de datos como un registro con una
 <p align="justify"><b>PostgreSQL</b> proporciona el soporte para tipos de datos BLOB mediante las funciones predeterminadas: <i>lo_import()</i> y <i>lo_export()</i>, las cuales importan y exportan archivos desde el sistema de archivos hacia la base de datos y viceversa.
 Para ejemplificar el uso de estas funciones tenemos una tabla llamada Books, que creamos con el <i>create_script.sql</i>:
 </p>
-<div>
-<IMG src="images/tbbooks.png">
-</div><br>
 <p align="justify">Es esta tabla la columna picture tiene un tipo de dato oid el cual es un identificador que se utiliza como referencia hacia la tabla de sistema <i><b>pg_largeobject</b></i> la cual almacena el objeto binario en una o más filas, por lo que la columna picture almacena únicamente el apuntador hacia la información del objeto binario no el objeto binario en si.
 Como ejemplo agregamos un registro a la tabla,  importando la imagen desde el sistema de archivos hacia la base de datos con la función: <i>lo_import()</i></p>
 <div>
